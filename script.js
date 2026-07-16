@@ -71,3 +71,42 @@ form.addEventListener('submit', (e) => {
 
 // ===== Año dinámico en el footer =====
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// ===== Modales de proyecto =====
+(() => {
+  let lastFocused = null;
+
+  const openModal = (modal) => {
+    lastFocused = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add('modal-open');
+    const focusable = modal.querySelector('.modal__close');
+    if (focusable) focusable.focus();
+  };
+
+  const closeModal = (modal) => {
+    modal.hidden = true;
+    document.body.classList.remove('modal-open');
+    if (lastFocused) lastFocused.focus();
+  };
+
+  // Abrir desde cualquier elemento con data-modal="id"
+  document.querySelectorAll('[data-modal]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const modal = document.getElementById(trigger.dataset.modal);
+      if (modal) openModal(modal);
+    });
+  });
+
+  // Cerrar con overlay o botón (data-close), y con la tecla Escape
+  document.querySelectorAll('.modal').forEach((modal) => {
+    modal.querySelectorAll('[data-close]').forEach((el) => {
+      el.addEventListener('click', () => closeModal(modal));
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll('.modal:not([hidden])').forEach(closeModal);
+  });
+})();

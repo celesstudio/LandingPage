@@ -152,27 +152,27 @@
           </ul>
           <span class="project__link">Ver caso →</span>
         </a>
-        <a href="#" class="project">
+        <button type="button" class="project" data-modal="modal-tracker">
           <div class="project__head">
             <span class="project__index">02</span>
-            <span class="project__type">App móvil</span>
+            <span class="project__type">Data &amp; Trading</span>
           </div>
-          <h3 class="project__title">Nombre del proyecto</h3>
-          <p class="project__text">Describe aquí el problema que resolvimos y el resultado medible que obtuvimos.</p>
+          <h3 class="project__title">Tracker de datos para trading fundamental</h3>
+          <p class="project__text">Rastrea datos de empresas de los sectores de retail, tech y energías, y aplica análisis cruzado entre ellas para obtener parámetros útiles en el trading fundamental.</p>
           <ul class="project__stack">
-            <li>React Native</li><li>Expo</li><li>Firebase</li>
+            <li>Retail</li><li>Tech</li><li>Energías</li><li>Análisis cruzado</li><li>Trading fundamental</li>
           </ul>
-          <span class="project__link">Ver caso →</span>
-        </a>
+          <span class="project__link">Más información →</span>
+        </button>
         <a href="#" class="project">
           <div class="project__head">
             <span class="project__index">03</span>
-            <span class="project__type">Rendimiento</span>
+            <span class="project__type">Ajedrez &amp; IA</span>
           </div>
-          <h3 class="project__title">Nombre del proyecto</h3>
-          <p class="project__text">Describe aquí el problema que resolvimos y el resultado medible que obtuvimos.</p>
+          <h3 class="project__title">Entrenador personal de ajedrez</h3>
+          <p class="project__text">Un entrenador personal de ajedrez que analiza tus partidas, detecta patrones en tu juego y usa IA para darte recomendaciones personalizadas y ayudarte a mejorar.</p>
           <ul class="project__stack">
-            <li>PostgreSQL</li><li>Redis</li><li>Docker</li>
+            <li>Ajedrez</li><li>Análisis de partidas</li><li>Detección de patrones</li><li>IA</li>
           </ul>
           <span class="project__link">Ver caso →</span>
         </a>
@@ -297,6 +297,27 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===== Modal: Tracker de datos ===== -->
+  <div class="modal" id="modal-tracker" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-tracker-title">
+      <button type="button" class="modal__close" data-close aria-label="Cerrar">×</button>
+      <p class="eyebrow text-purple">Data &amp; Trading</p>
+      <h3 class="modal__title" id="modal-tracker-title">Tracker de datos para trading fundamental</h3>
+      <p class="modal__text">
+        Un tracker que recopila y estructura datos financieros y operativos de empresas
+        de los sectores de <strong>retail</strong>, <strong>tech</strong> y <strong>energías</strong>.
+        Sobre esos datos aplica un <strong>análisis cruzado</strong> entre compañías y sectores para
+        destilar parámetros útiles en el <strong>trading fundamental</strong>: señales de valoración,
+        comparativas y métricas que ayudan a decidir con criterio.
+      </p>
+      <p class="modal__note">
+        Es un <strong>SaaS B2B</strong>. Si te interesa adquirirlo o quieres una demo,
+        escríbenos a <a href="mailto:celescoding@gmail.com" class="text-gold">celescoding@gmail.com</a>.
+      </p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
