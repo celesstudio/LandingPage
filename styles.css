@@ -276,6 +276,8 @@ img { max-width: 100%; display: block; }
   position: relative;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: inherit;
   background: linear-gradient(145deg, var(--black-2), var(--black-3));
   border: 1px solid var(--black-3);
   border-radius: var(--radius);
@@ -342,9 +344,10 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   color: var(--gold);
   align-self: flex-start;
-  transition: gap var(--transition), color var(--transition);
+  margin-top: auto;
+  transition: color var(--transition);
 }
-.project__link:hover { color: var(--gold-soft); }
+.project:hover .project__link { color: var(--gold-soft); }
 
 /* ===== Mindset ===== */
 .mindset__grid {
