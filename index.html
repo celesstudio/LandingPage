@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Celes — Estudio de desarrollo de aplicaciones web y móviles."">
+  <title>Celes Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">Celes</a>
+      <nav class="nav" id="nav">
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#mindset">Mentalidad</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <a href="#contact" class="btn btn--gold nav__cta">Hablemos</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow">Estudio de desarrollo web &amp; móvil</p>
+      <h1 class="hero__title">Software que <span class="text-gold">rinde</span> bajo presión</h1>
+      <p class="hero__subtitle">
+        En Celes diseñamos y construimos aplicaciones web y móviles pensadas
+        para escalar: código limpio, rendimiento medible y decisiones de producto
+        tomadas como se toman las jugadas importantes — con varios movimientos de
+        anticipación.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--gold">Ver proyectos</a>
+        <a href="#contact" class="btn btn--ghost">Trabajemos juntos</a>
+      </div>
+      <ul class="hero__stack" aria-label="Tecnologías principales">
+        <li>Flutter</li>
+        <li>React Native</li>
+        <li>Supabase</li>
+        <li>Python</li>
+        <li>PostgreSQL</li>
+        <li>Docker</li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__text">
+        <p class="eyebrow text-purple">Nosotros</p>
+        <h2 class="section__title">Estrategia y <span class="text-gold">producto</span></h2> 
+        <p class="section__lead">
+          Detrás de Celes hay un desarrollador con mentalidad de emprendedor, 
+          apoyado por una red de colaboradores y especialistas según las necesidades de cada proyecto.
+        </p>
+        <p class="section__lead">
+          Nos obsesiona la optimización. Buscamos elegir la opción más eficiente en cada situación, enfocandonos
+          en sectores muy diversos: emprendimiento, programación, diseño gráfico, juegos de estrategia, deportes, alto rendimiento y crecimiento personal.
+        </p>
+      </div>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__icon" aria-hidden="true">◈</span>
+          <div class="stat__body">
+            <span class="stat__title">Emprendimiento</span>
+            <span class="stat__label">Pensamos como fundadores: el código existe para sostener un negocio, no al revés.</span>
+          </div>
+        </div>
+        <div class="stat">
+          <span class="stat__icon" aria-hidden="true">♞</span>
+          <div class="stat__body">
+            <span class="stat__title">Deportes mentales</span>
+            <span class="stat__label">Ajedrez, shogi y go. Cálculo, lectura de posición y planes que resisten el largo plazo.</span>
+          </div>
+        </div>
+        <div class="stat">
+          <span class="stat__icon stat__icon--arrow" aria-hidden="true">↗</span>
+          <div class="stat__body">
+            <span class="stat__title">Alto rendimiento</span>
+            <span class="stat__label">Exigencia sostenida y métricas antes que promesas, en el equipo y en el producto.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section features" id="services">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow text-purple">Qué hacemos</p>
+        <h2 class="section__title">Del prototipo a <span class="text-gold">producción</span></h2>
+      </div>
+      <div class="features__grid">
+        <article class="card">
+          <div class="card__icon">✦</div>
+          <h3 class="card__title">Aplicaciones web</h3>
+          <p class="card__text">Plataformas full-stack con React Native, TypeScript y Node. Arquitectura pensada para crecer sin reescribirse.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✦</div>
+          <h3 class="card__title">Apps móviles</h3>
+          <p class="card__text">Aplicaciones nativas y multiplataforma con Flutter. Una base de código, experiencia fluida en iOS y Android.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✦</div>
+          <h3 class="card__title">Alto rendimiento</h3>
+          <p class="card__text">Perfilado, optimización y reducción de latencia. Métricas antes y después: el rendimiento se mide, no se promete.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">✦</div>
+          <h3 class="card__title">Producto y emprendimiento</h3>
+          <p class="card__text">Acompañamos la idea desde el MVP hasta el lanzamiento, priorizando lo que mueve la aguja del negocio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow text-purple">Trabajo</p>
+        <h2 class="section__title">Proyectos <span class="text-gold">seleccionados</span></h2>
+      </div>
+      <div class="projects__grid">
+        <article class="project">
+          <div class="project__head">
+            <span class="project__index">01</span>
+            <span class="project__type">Web app</span>
+          </div>
+          <h3 class="project__title">Nombre del proyecto</h3>
+          <p class="project__text">Describe aquí el problema que resolvimos y el resultado medible que obtuvimos.</p>
+          <ul class="project__stack">
+            <li>React</li><li>TypeScript</li><li>Node.js</li>
+          </ul>
+          <a href="#" class="project__link">Ver caso →</a>
+        </article>
+        <article class="project">
+          <div class="project__head">
+            <span class="project__index">02</span>
+            <span class="project__type">App móvil</span>
+          </div>
+          <h3 class="project__title">Nombre del proyecto</h3>
+          <p class="project__text">Describe aquí el problema que resolvimos y el resultado medible que obtuvimos.</p>
+          <ul class="project__stack">
+            <li>React Native</li><li>Expo</li><li>Firebase</li>
+          </ul>
+          <a href="#" class="project__link">Ver caso →</a>
+        </article>
+        <article class="project">
+          <div class="project__head">
+            <span class="project__index">03</span>
+            <span class="project__type">Rendimiento</span>
+          </div>
+          <h3 class="project__title">Nombre del proyecto</h3>
+          <p class="project__text">Describe aquí el problema que resolvimos y el resultado medible que obtuvimos.</p>
+          <ul class="project__stack">
+            <li>PostgreSQL</li><li>Redis</li><li>Docker</li>
+          </ul>
+          <a href="#" class="project__link">Ver caso →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Mindset: estrategia + crecimiento ===== -->
+  <section class="section mindset" id="mindset">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow text-purple">Mentalidad</p>
+        <h2 class="section__title">El tablero y el <span class="text-gold">código</span></h2>
+        <p class="section__sub">
+          Los juegos de estrategia no son un pasatiempo aparte: son el mismo músculo
+          que usamos para diseñar sistemas. Cálculo, paciencia y saber cuándo sacrificar.
+        </p>
+      </div>
+      <div class="mindset__grid">
+        <article class="mindset__card">
+          <div class="mindset__piece" aria-hidden="true">♞</div>
+          <h3 class="mindset__title">Ajedrez</h3>
+          <p class="mindset__text">Cálculo concreto y planes a largo plazo. Igual que una arquitectura: cada pieza defiende a la siguiente.</p>
+        </article>
+        <article class="mindset__card">
+          <div class="mindset__piece mindset__piece--kanji" aria-hidden="true">王</div>
+          <h3 class="mindset__title">Shogi</h3>
+          <p class="mindset__text">Nada se descarta: las piezas capturadas vuelven al tablero. Reutilizar recursos es diseño de sistemas.</p>
+        </article>
+        <article class="mindset__card">
+          <div class="mindset__piece" aria-hidden="true">◉</div>
+          <h3 class="mindset__title">Go</h3>
+          <p class="mindset__text">Influencia sobre territorio. Decisiones locales que solo tienen sentido viendo el tablero completo.</p>
+        </article>
+        <article class="mindset__card">
+          <div class="mindset__piece" aria-hidden="true">◈</div>
+          <h3 class="mindset__title">Emprendimiento</h3>
+          <p class="mindset__text">Construir producto es jugar con información incompleta y reloj corriendo. Se decide igual: con criterio.</p>
+        </article>
+      </div>
+
+      <div class="mindset__divider">
+        <h3 class="mindset__subtitle">Crecimiento y <span class="text-gold">alto rendimiento</span></h3>
+        <p class="mindset__sublead">
+          Mejorar es un proceso, no un golpe de suerte. El alto rendimiento no aparece
+          el día del examen: se construye antes. Aplicamos al equipo el mismo método
+          que aplicamos al código — medir, ajustar y repetir.
+        </p>
+      </div>
+
+      <div class="growth__grid">
+        <article class="growth__item">
+          <span class="growth__step" aria-hidden="true">01</span>
+          <div class="growth__body">
+            <h3 class="growth__title">Disciplina antes que motivación</h3>
+            <p class="growth__text">
+              La constancia gana a la inspiración. Los hábitos sostenidos son los que
+              mueven un proyecto de la idea al lanzamiento.
+            </p>
+          </div>
+        </article>
+        <article class="growth__item">
+          <span class="growth__step" aria-hidden="true">02</span>
+          <div class="growth__body">
+            <h3 class="growth__title">Medir para mejorar</h3>
+            <p class="growth__text">
+              Lo que no se mide no se optimiza. Igual que perfilamos una aplicación,
+              revisamos nuestro propio rendimiento con datos, no con intuición.
+            </p>
+          </div>
+        </article>
+        <article class="growth__item">
+          <span class="growth__step" aria-hidden="true">03</span>
+          <div class="growth__body">
+            <h3 class="growth__title">Aprender de cada partida</h3>
+            <p class="growth__text">
+              En el tablero se analiza la derrota; en producto, el error. Cada iteración
+              deja una lección que se incorpora a la siguiente.
+            </p>
+          </div>
+        </article>
+        <article class="growth__item">
+          <span class="growth__step" aria-hidden="true">04</span>
+          <div class="growth__body">
+            <h3 class="growth__title">Rendir bajo presión</h3>
+            <p class="growth__text">
+              Plazos cortos y decisiones con información incompleta. Entrenamos la calma
+              para que la exigencia no dicte la calidad del resultado.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / Contact ===== -->
+  <section class="section cta" id="contact">
+    <div class="container cta__inner">
+      <h2 class="cta__title">¿Tienes un proyecto en <span class="text-gold">mente</span>?</h2>
+      <p class="cta__text">Cuéntanos qué quieres construir y te respondemos con un plan, no con un presupuesto genérico.</p>
+      <form class="cta__form" id="subscribeForm" novalidate>
+        <input type="email" class="cta__input" id="email" placeholder="tu@correo.com" required aria-label="Correo electrónico">
+        <button type="submit" class="btn btn--gold">Contactar</button>
+      </form>
+      <p class="cta__msg" id="formMsg" role="status"></p>
+      <p class="cta__email">O escríbenos directamente a <span class="text-gold">celescoding@gmail.com</span></p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo logo--sm">Celes</span>
+      <p class="footer__copy">© <span id="year"></span> Celes.  </p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram de Celes">Instagram</a>
+        <a href="https://www.linkedin.com/in/celes-studio-16b79a422"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="LinkedIn de Celes">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
