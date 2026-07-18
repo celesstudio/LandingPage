@@ -164,7 +164,7 @@
           </ul>
           <span class="project__link">Más información →</span>
         </button>
-        <a href="#" class="project">
+        <button type="button" class="project" data-modal="modal-chess">
           <div class="project__head">
             <span class="project__index">03</span>
             <span class="project__type">Ajedrez &amp; IA</span>
@@ -174,8 +174,8 @@
           <ul class="project__stack">
             <li>Ajedrez</li><li>Análisis de partidas</li><li>Detección de patrones</li><li>IA</li>
           </ul>
-          <span class="project__link">Ver caso →</span>
-        </a>
+          <span class="project__link">Más información →</span>
+        </button>
       </div>
     </div>
   </section>
@@ -315,6 +315,38 @@
       <p class="modal__note">
         Es un <strong>SaaS B2B</strong>. Si te interesa adquirirlo o quieres una demo,
         escríbenos a <a href="mailto:celescoding@gmail.com" class="text-gold">celescoding@gmail.com</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== Modal: Entrenador de ajedrez ===== -->
+  <div class="modal" id="modal-chess" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-chess-title">
+      <button type="button" class="modal__close" data-close aria-label="Cerrar">×</button>
+      <p class="eyebrow text-purple">Ajedrez &amp; IA</p>
+      <h3 class="modal__title" id="modal-chess-title">Entrenador personal de ajedrez</h3>
+      <p class="modal__text">
+        Un entrenador que analiza tus partidas y construye un perfil de tu juego para ayudarte a mejorar
+        de forma personalizada.
+      </p>
+      <p class="modal__text">
+        <strong>Qué datos extrae:</strong> importa tus partidas y de cada una obtiene la precisión por jugada,
+        los errores (imprecisiones, errores y errores graves), el manejo del tiempo, el rendimiento por
+        fase (apertura, medio juego y final) y tu repertorio de aperturas. Con el histórico completo detecta
+        <strong>patrones recurrentes</strong>: tipos de posición donde fallas, motivos tácticos que sueles
+        pasar por alto y situaciones que se te repiten.
+      </p>
+      <p class="modal__text">
+        <strong>Qué mejoras y consejos da:</strong> a partir de ese análisis, la IA te ofrece
+        <strong>recomendaciones personalizadas</strong>: tus puntos débiles priorizados, ejercicios y motivos
+        tácticos enfocados a tus fallos más frecuentes, sugerencias de repertorio de aperturas y planes
+        concretos para las posiciones que peor manejas.
+      </p>
+      <p class="modal__note">
+        Este proyecto <strong>aún está en fase de producción</strong>. Si te interesa seguir su evolución o
+        probarlo cuando esté listo, escríbenos a
+        <a href="mailto:celescoding@gmail.com" class="text-gold">celescoding@gmail.com</a>.
       </p>
     </div>
   </div>
